@@ -1,0 +1,299 @@
+@import "./vars.scss";
+
+// Blocks
+
+.block {
+  width: 100%;
+  border: 0 transparent;
+  border-radius: $size__border-radius;
+}
+
+.dark-mode .block_bg {
+  background-color: $color__dark-component-bg;
+}
+.light-mode .block_bg {
+  background-color: $color__light-component-bg;
+}
+.blue-mode .block_bg {
+  background-color: $color__blue-component-bg;
+}
+
+.dark-mode .block__component {
+  background-color: $color__dark-component-toggle-bg;
+}
+.light-mode .block__component {
+  background-color: $color__light-component-toggle-bg;
+}
+.blue-mode .block__component {
+  background-color: $color__blue-component-toggle-bg;
+}
+
+// Widht
+
+.w-100 {
+  width: 100%;
+}
+
+// Margins Paddings
+
+.mg_05 {
+  margin: 5px;
+}
+.mg_1 {
+  margin: 10px;
+}
+.mg_2 {
+  margin: 20px;
+}
+.mg_l_1 {
+  margin-left: 10px;
+}
+.mg_l_2 {
+  margin-left: 20px;
+}
+.mg_r_1 {
+  margin-right: 10px;
+}
+.mg_r_2 {
+  margin-right: 20px;
+}
+.mg_t_1 {
+  margin-top: 10px;
+}
+.mg_t_2 {
+  margin-top: 20px;
+}
+.mg_b_1 {
+  margin-bottom: 10px;
+}
+.mg_b_2 {
+  margin-bottom: 20px;
+}
+
+.p_05 {
+  padding: 5px;
+}
+.p_1 {
+  padding: 10px;
+}
+.p_2 {
+  padding: 20px;
+}
+.p_l_1 {
+  padding-left: 10px;
+}
+.p_l_2 {
+  padding-left: 20px;
+}
+.p_l_3 {
+  padding-left: 30px;
+}
+.p_r_1 {
+  padding-right: 10px;
+}
+.p_r_2 {
+  padding-right: 20px;
+}
+.p_r_3 {
+  padding-right: 30px;
+}
+.p_t_05 {
+  padding-top: 5px;
+}
+.p_t_1 {
+  padding-top: 10px;
+}
+.p_t_2 {
+  padding-top: 20px;
+}
+.p_b_05 {
+  padding-bottom: 5px;
+}
+.p_b_1 {
+  padding-bottom: 10px;
+}
+.p_b_2 {
+  padding-bottom: 20px;
+}
+
+// Text
+
+.text {
+  font-family: sans-serif, "Roboto";
+  font-size: 16px;
+}
+
+.text_white {
+  color: $color__light;
+}
+
+.dark-mode .text,
+.dark-mode .text_white {
+  color: $color__light;
+}
+.ligth-mode .text,
+.ligth-mode .text_white {
+  color: $color__dark;
+}
+.blue-mode .text,
+.blue-mode .text_white {
+  color: $color__light;
+}
+
+.dark-mode .text_dark {
+  color: $color__dark;
+}
+.ligth-mode .text_dark {
+  color: $color__light;
+}
+.blue-mode .text_dark {
+  color: $color__dark;
+}
+
+.text_disabled {
+  color: $color__disabled;
+}
+.text_blocked {
+  color: $color__blocked;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+.text_middle {
+  font-weight: normal;
+}
+.text_light {
+  font-weight: lighter;
+}
+.text_smallest {
+  font-size: 10px;
+}
+.text_small {
+  font-size: 12px;
+}
+.text_small-middle {
+  font-size: 13px;
+}
+.text_middle {
+  font-size: 14px;
+}
+.text_normal {
+  font-size: 16px;
+}
+.text_big {
+  font-size: 18px;
+}
+.text_biggest {
+  font-size: 22px;
+}
+
+.text_left {
+  text-align: left;
+}
+.text_right {
+  text-align: right;
+}
+.text_center {
+  width: 100%;
+  text-align: center;
+}
+.text_justify {
+  text-align: justify;
+}
+
+// Flex
+
+.flex {
+  display: flex;
+}
+.flex_wrap {
+  flex-wrap: wrap;
+}
+.flex_row {
+  flex-direction: row;
+}
+.flex_col {
+  flex-direction: column;
+}
+.flex_al_c {
+  align-items: center;
+}
+.flex_al_s {
+  align-items: flex-start;
+}
+.flex_al_e {
+  align-items: flex-end;
+}
+.flex_j_c {
+  justify-content: center;
+}
+.flex_j_sb {
+  justify-content: space-between;
+}
+.flex_j_s {
+  justify-content: flex-start;
+}
+.flex_j_e {
+  justify-content: flex-end;
+}
+
+// Button
+
+// .btn,
+// .input {
+//   border: 2px transparent solid;
+//   border-radius: $size__border-radius;
+//   padding: 5px 30px 5px 30px;
+//   user-select: none;
+// }
+
+// .input {
+//   background-color: $color__toggle-background;
+// }
+
+// .input:focus {
+//   cursor: pointer;
+//   border-color: $color__status_active;
+// }
+
+// .btn_active {
+//   background-color: $color__status_active;
+// }
+
+// .btn_active:hover {
+//   border-color: $color__status_active;
+//   color: $color__status_active;
+// }
+
+// .btn_black {
+//   background-color: transparent;
+//   border-color: $color__status_disable;
+//   color: $color__status_disable;
+// }
+
+// .btn:hover {
+//   cursor: pointer;
+//   background-color: transparent;
+// }
+
+// .btn_black:hover {
+//   border-color: $color__status_static;
+//   color: $color__status_static;
+// }
+
+// Links
+
+.dark-mode .link {
+  color: $color__light;
+}
+
+.dark-mode .link:hover {
+  color: $color__dark-active;
+}
+.light-mode .link:hover {
+  color: $color__light-active;
+}
+.blue-mode .link:hover {
+  color: $color__dark-active;
+}

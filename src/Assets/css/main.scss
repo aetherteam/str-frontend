@@ -1,0 +1,136 @@
+@import "./vars";
+@import "./rules";
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  color: $color__light;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+body,
+.body,
+#app,
+#__nuxt,
+#__layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.dark-mode body {
+  background-color: $color__dark-body-bg;
+}
+
+.blue-mode body {
+  background-color: $color__blue-body-bg;
+}
+
+.light-mode body {
+  background-color: $color__light-body-bg;
+}
+
+.body-container {
+  max-width: $size__max-width;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.body__content {
+  flex: 2;
+}
+.body__sidebar {
+  flex: 1;
+}
+
+// Sidebar
+
+.sidebar__profile {
+  height: 200px;
+  position: relative;
+}
+
+.sidebar__profile-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  filter: brightness(0.3);
+  border: 0 transparent;
+  border-radius: $size__border-radius;
+  z-index: 1;
+}
+
+.sidebar__profile-info {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+// Books
+
+.books-container__poster-container {
+  position: relative;
+}
+
+.poster-container__img,
+.books-container__poster-container {
+  width: 180px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: $size__border-radius;
+}
+
+.poster-container__rating {
+  width: 60px;
+  height: 30px;
+  background-color: $color__dark;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 0 20px;
+}
+
+.poster-container__favorite {
+  width: 60px;
+  height: 30px;
+  background-color: $color__dark;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 20px 0;
+}
+
+.poster-container__status {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 20px 20px;
+}
+.poster-container__status_main {
+  background-color: $color__dark;
+}
+
+.books-container__info {
+  min-height: 280px;
+}
+
+.genre {
+  width: auto;
+}
